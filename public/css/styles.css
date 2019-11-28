@@ -1,0 +1,31 @@
+a,a:hover{
+    text-decoration: none;
+}
+
+.like-l, .like-d{
+    padding: 5px;
+    text-transform: capitalize;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 2px;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.like-l{
+    background-color: #00b894;
+}
+
+.like-d{
+    background-color: #d63031;
+}
+.like-l:hover{
+    background-color: #55efc4;
+    color: #fff;
+}
+
+.like-d:hover{
+    background-color: #ff7675;
+    color: #fff;
+}
