@@ -24,7 +24,7 @@
         @else
             <div class="alert alert-dark w-100" role="alert">
                 <div class="font-weight-bold">You have no preffered shops yet!</div>
-                You can add your preffered ones from <a class="font-weight-bold" href="{{route('shops')}}">here</a>
+                You can add your preffered ones from <a class="font-weight-bold" href="{{route('nearby')}}">here</a>
             </div>
         @endif
         

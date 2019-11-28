@@ -51,7 +51,7 @@
                             @endif
                         @else
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('shops') }}">{{ __('Shops') }}</a>
+                                <a class="nav-link" href="{{ route('nearby') }}">{{ __('Shops') }}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('preferred') }}">{{ __('My Preferred Shops') }}</a>
