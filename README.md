@@ -1,10 +1,8 @@
 ## Neabry Shops
 
-This application is created to help users to discover thier neabry shops.
+This application is created to help users to discover thier nearby shops.
 
 ## Used Technologies
-
-To achieve this task I used: 
 
 - **[Laravel 6.2](https://laravel.com/)**
 - **[MySQL](https://mysql.com/)**
