@@ -9,7 +9,7 @@ To achieve this task I used:
 - **[Laravel 6.2](https://laravel.com/)**
 - **[MySQL](https://mysql.com/)**
 - **[Bootsrap 4](https://getbootstrap.com/)**
-- **HTML/CSS/**
+- **HTML/CSS**
 - **[Mockaroo](https://mockaroo.com/)**
 
 
