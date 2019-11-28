@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Nearby Shops</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -12,8 +12,8 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
-                color: #636b6f;
+                background-image: url('images/bg_bag.jpg');
+                color: #FFF;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
@@ -49,7 +49,7 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color: #fff;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
@@ -58,8 +58,15 @@
                 text-transform: uppercase;
             }
 
+            .links > a:hover {
+                text-decoration: underline;
+            }
+
             .m-b-md {
                 margin-bottom: 30px;
+            }
+            .subtitle > h2{
+                font-weight: lighter;
             }
         </style>
     </head>
@@ -93,8 +100,8 @@
                     Nearby Shops
                 </div>
 
-                <div class="">
-                    <h2>To discover your the closest shops...</h2>
+                <div class="subtitle">
+                    <h2>To discover the closest shops to you...</h2>
                 </div>
             </div>
         </div>
