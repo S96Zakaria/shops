@@ -16,7 +16,11 @@
                     </div>
                     <div class="card-body">
                         <p>{{ $shop->name }}</p>
-                        <a class="like-d" href="/unlike/{{ $shop->id }}">Remove</a>
+                        <a class="like-d" href="/unlike" onclick="event.preventDefault();
+                        document.getElementById('id').value = {{ $shop->id }};
+                        document.getElementById('remove-form').submit();">
+                              Remove
+                      </a>                    
                     </div>
                   </div>
             </div>
@@ -34,5 +38,10 @@
         </div>
     </div>
 
+
+    <form id="remove-form" action="/unlike" method="POST" style="display: none;">
+      @csrf
+      <input type="text" id="id" name="id" value=""/>
+  </form>
 
 @endsection

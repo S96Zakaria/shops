@@ -10,6 +10,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/shops',            'ShopController@nearbyShops')->name('nearby');
 Route::get('/shops/preferred',  'ShopController@preferredShops')->name('preferred');
-Route::get('/shops/{id}/{like}','ShopController@action');
-Route::get('/unlike/{id}',      'ShopController@unlike');
+Route::post('/like',       'ShopController@like');
+Route::post('/unlike',     'ShopController@unlike');
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Validation\Rule;
 use App\Shop;
 use App\Like;
 use Auth;
@@ -82,23 +83,33 @@ class ShopController extends Controller
 
 
 
-    public function action($id,$like){
-        if($like=='true' || $like=='false'){
+    public function like(){
+        $data = request()->validate([
+            'id' => 'required|integer',
+            'like'   => [
+                'required',
+                Rule::in([0,1]),
+            ]
+        ]);
+        //dd($data['like']);
             $n_like = new Like();
             $n_like->user_id = Auth::user()->id;
-            $n_like->shop_id = $id;
-            $n_like->like = $like=='true' ? 1:0;
+            $n_like->shop_id = $data['id'];
+            $n_like->like = $data['like'];
             $n_like->save();
             return redirect()->route('nearby');
-        }
+        
         return abort(404);
     }
 
 
  
 
-    public function unlike($id){
-        DB::table('likes')->where('shop_id', '=', $id)->delete();
+    public function unlike(){
+        $data = request()->validate([
+            'id' => 'required|integer',
+        ]);
+        DB::table('likes')->where('shop_id', '=', $data['id'])->delete();
         return redirect()->route('preferred');
     }
 }
